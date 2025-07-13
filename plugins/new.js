@@ -28,7 +28,7 @@ const {
                                                     },
                                                     async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
                                                         try {
-                                                            const kav = await getBuffer("https://mmg.whatsapp.net/o1/v/t24/f2/m233/AQNmKo5Vxzpeb0_GjorMvtrB5JwteTYzRAqu6Z5R2SX-x106wBUsUAbyKAsp6BzBrwsvEw22KFVeUD1_HCoTn7Z7_nuvBHm4YpyqUDI0Qw?ccb=9-4&oh=01_Q5Aa2AFkZzwZaufJJGpfRIx2_59g3XImX3boBOvKApHa_XtSSw&oe=689A088F&_nc_sid=e6ed6c&mms3=true")
+                                                            const kav = await getBuffer("https://mmg.whatsapp.net/v/t62.43144-24/10000000_2572528633088964_4003891503007524239_n.enc?ccb=11-4&oh=01_Q5Aa2AH7XKTlqp02AVKIi1M3vQHQhoQBdK7aYY84lOklAIIKJA&oe=6899DB27&_nc_sid=5e03e0&mms3=true")
                                                             await conn.sendMessage(from, { document: kav, mimetype: "video/mp4", fileName: "test", caption: "test"});
                                                             } catch(e) {
                                                             reply(`${e}`)
