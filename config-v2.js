@@ -1,4 +1,4 @@
-const DATABASE =  "postgres://izumimd_meje_user:0Vhm5vKGZ7ORt2FlJBQf4d6EtRdeuE8z@dpg-cn0o2imn7f5s73fa46q0-a.frankfurt-postgres.render.com/izumimd_meje" //"mongodb+srv://tharusha:Tharu22@cluster0.fxqbk.mongodb.net/" // මෙතනට mongodb,mysql,postgresql or github token එකක් enter කරන්න මේ "" දෙක මැදට. (Enter a mongodb,mysql,postgresql or github token here between these two "".)
+const DATABASE =  "mongodb+srv://tharusha:Tharu22@cluster0.fxqbk.mongodb.net/" // මෙතනට mongodb,mysql,postgresql or github token එකක් enter කරන්න මේ "" දෙක මැදට. (Enter a mongodb,mysql,postgresql or github token here between these two "".)
 const BOT_NUMBER = "94711450710" // ඔයාගෙ whatsapp number එක. (your whatsapp number)
 const SESSION_ID =/* "PRABATH-MD~stJbA5RhdjnoXha" */"PRABATH-MD~AucADIyY#VD-PKQpL0cOgYFl9-oRlmcduUl9qPvZUrVlKnLgFPo0" // ඔයාගෙ session id එක මේකෙන් ගන්න - https://prabathmd-official.vercel.app
 
