@@ -18,35 +18,14 @@ cmd(mp4videoCommand, async (conn, mek, m, { from, q, reply }) => {
       return reply("❌ Please provide a video URL.");
     }
 
-    // Send a HEAD request to get headers of the URL
-    const headResponse = await axios.head(q);
 
     // Default filename
-    let filename = "video.mp4";
-
-    // Get Content-Disposition header to check for filename
-    const contentDisposition = headResponse.headers["content-disposition"];
-
-    if (contentDisposition && contentDisposition.includes("filename=")) {
-      // Extract filename from header if available
-      const filenameMatch = contentDisposition.match(/filename="?(.+?)"?$/);
-      if (filenameMatch && filenameMatch[1]) {
-        filename = filenameMatch[1];
-      }
-    } else {
-      // If no filename in headers, derive filename from URL
-      filename = path.basename(q.split('?')[0]);
-    }
-
-    // Prepare the video message payload
-    const videoPayload = {
-      url: q
-    };
+    let filename = "video.mp4"
 
     const messageOptions = {
-      document: videoPayload,
+      document: q,
       mimetype: "video/mp4",
-      fileName: filename
+      fileName: "filename"
     };
 
     // Send the video as a message
