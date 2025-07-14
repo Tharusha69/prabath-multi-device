@@ -30,7 +30,7 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
 const videoPayload = {
       url: kav
     };
-await conn.sendMessage(from, { document: kav, mimetype: "video/mp4", fileName: "test", caption: "test"});
+await conn.sendMessage(from, { document: videoPayload, mimetype: "video/mp4", fileName: "test", caption: "test"});
 } catch(e) {
 reply(`${e}`)
 }
